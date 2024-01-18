@@ -47,5 +47,10 @@ module.exports = {
             'error',
             'always'
         ]
-    }
+    },
+    settings: {
+        react: {
+            version: 'detect', // ou substitua por uma versão específica do React
+        },
+    },
 };

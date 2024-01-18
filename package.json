@@ -6,6 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
+    "prepare": "husky install",
     "start": "react-native start",
     "test": "jest"
   },
@@ -29,6 +30,7 @@
     "eslint": "^8.19.0",
     "eslint-plugin-react": "^7.33.2",
     "git-commit-msg-linter": "^5.0.6",
+    "husky": "^8.0.3",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
     "react-test-renderer": "18.2.0",

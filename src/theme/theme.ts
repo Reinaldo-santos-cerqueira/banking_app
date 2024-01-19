@@ -3,7 +3,6 @@ import { createTheme } from '@shopify/restyle';
 const palette = {
     darkBg: '#161622',
     darkBgContrast: '#1E1E2D',
-    lightBg: '#FFFFFF',
     lightBgContrast: '#F4F4F4',
     gray3: '#8B8B94',
     bluePrimary: '#0066FF',
@@ -26,7 +25,10 @@ export const theme = createTheme({
         textSecondary: palette.gray1,
         inputColor: palette.gray4,
         secondaryBtn: palette.darkBgContrast,
-        bgCardArea: palette.blueLight
+        bgCardArea: palette.blueLight,
+        grayWhite: palette.grayWhite,
+        gray1: palette.gray1,
+
     },
     spacing: {
         s4: 4,
@@ -48,7 +50,58 @@ export const theme = createTheme({
         s16: 16,
     },
     textVariants: {
-        defaults: {}
+        defaults: {
+            color: 'grayWhite',
+            fontFamily: 'Poppins',
+            fontSize: 14,
+            fontStyle: 'normal',
+            fontWeight: 400,
+            lineHeight: 14,
+        },
+        logoText: {
+            color: 'grayWhite',
+            fontFamily: 'Poppins',
+            fontSize: 35,
+            fontStyle: 'normal',
+            fontWeight: 600,
+            lineHeight: 35,
+            textTransform: 'uppercase',
+        },
+        titleSlider: {
+            color: 'grayWhite',
+            fontFamily: 'Poppins',
+            textAlign: 'center',
+            fontSize: 26,
+            fontStyle: 'normal',
+            fontWeight: 600,
+            lineHeight: 'normal'
+        },
+        subTitleSlider: {
+            color: 'gray1',
+            textAlign: 'center',
+            fontFamily: 'Poppins',
+            fontSize: 14,
+            fontStyle: 'normal',
+            fontWeight: 400,
+            lineHeight: 24
+        },
+        btnText: {
+            color: 'grayWhite',
+            textAlign: 'center',
+            fontFamily: 'Poppins',
+            fontSize: 16,
+            fontStyle: 'normal',
+            fontWeight: 600,
+            lineHeight: 24
+        },
+        labelText: {
+            color: 'inputColor',
+            fontFamily: 'Poppins',
+            fontSize: 14,
+            fontStyle: 'normal',
+            fontWeight: 400,
+            lineHeight: 14,
+        }
     }
 });
 

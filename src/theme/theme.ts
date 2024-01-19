@@ -20,6 +20,8 @@ const palette = {
 export const theme = createTheme({
     colors: {
         ...palette,
+        background: palette.darkBg,
+        backgroundContrast: palette.darkBgContrast,
         buttonPrimary: palette.bluePrimary,
         textPrimary: palette.grayWhite,
         textSecondary: palette.gray1,
@@ -48,6 +50,8 @@ export const theme = createTheme({
         s8: 8,
         s12: 12,
         s16: 16,
+        s21: 21,
+        s42: 42
     },
     textVariants: {
         defaults: {

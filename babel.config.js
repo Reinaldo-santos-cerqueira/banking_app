@@ -11,7 +11,8 @@ module.exports = {
                 '@models': './src/models',
                 '@api': './src/api',
                 '@service': './src/service',
-                '@theme': './src/theme'
+                '@theme': './src/theme',
+                '@hooks': './src/hooks'
             }
         }]
     ]

@@ -47,6 +47,7 @@ export const theme = createTheme({
         s56: 56,
     },
     borderRadii: {
+        s5: 5,
         s8: 8,
         s12: 12,
         s16: 16,
@@ -56,55 +57,49 @@ export const theme = createTheme({
     textVariants: {
         defaults: {
             color: 'grayWhite',
-            fontFamily: 'Poppins',
+            fontFamily: 'Poppins-Regular',
             fontSize: 14,
             fontStyle: 'normal',
             fontWeight: 400,
-            lineHeight: 14,
         },
         logoText: {
             color: 'grayWhite',
-            fontFamily: 'Poppins',
+            fontFamily: 'Poppins-SemiBold',
             fontSize: 35,
             fontStyle: 'normal',
             fontWeight: 600,
-            lineHeight: 35,
             textTransform: 'uppercase',
         },
         titleSlider: {
             color: 'grayWhite',
-            fontFamily: 'Poppins',
+            fontFamily: 'Poppins-Bold',
             textAlign: 'center',
             fontSize: 26,
             fontStyle: 'normal',
             fontWeight: 600,
-            lineHeight: 'normal'
         },
         subTitleSlider: {
             color: 'gray1',
             textAlign: 'center',
-            fontFamily: 'Poppins',
+            fontFamily: 'Poppins-Regular',
             fontSize: 14,
             fontStyle: 'normal',
             fontWeight: 400,
-            lineHeight: 24
         },
         btnText: {
             color: 'grayWhite',
             textAlign: 'center',
-            fontFamily: 'Poppins',
+            fontFamily: 'Poppins-SemiBold',
             fontSize: 16,
             fontStyle: 'normal',
             fontWeight: 600,
-            lineHeight: 24
         },
         labelText: {
             color: 'inputColor',
-            fontFamily: 'Poppins',
+            fontFamily: 'Poppins-Regular',
             fontSize: 14,
             fontStyle: 'normal',
             fontWeight: 400,
-            lineHeight: 14,
         }
     }
 });

@@ -1,11 +1,12 @@
 import { FlatOnboarding, Screen } from '@components';
+import { AuthScreenProps } from '@routes';
 import React from 'react';
 
-export function OnBoardingScreen(): React.ReactNode {
+export function OnBoardingScreen({ navigation }: AuthScreenProps<'OnboardingScreen'>): React.ReactNode {
     return (
 
         <Screen>
-            <FlatOnboarding />
+            <FlatOnboarding goLogin={() => navigation.navigate('LoginScreen')} />
         </Screen>
     );
 }

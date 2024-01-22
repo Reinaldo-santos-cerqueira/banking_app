@@ -24,7 +24,7 @@ export function Screen({ children, canGoBack, scrollable }: ScreenProps) {
             >
                 <Container backgroundColor={colors.background} >
                     <Box
-                        paddingHorizontal='s24'
+                        paddingHorizontal='s20'
                         paddingBottom='s24'
                         style={{ paddingTop: top, paddingBottom: bottom }}
                     >

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Box, Text } from '@components';
+import { Box, Icon } from '@components';
 import { KeyboardAvoidingView, Platform, Pressable, SafeAreaView, StatusBar } from 'react-native';
 import { ScrollViewContainer, ViewContainer } from './Container';
 import { useAppSafeArea, useAppTheme } from '@hooks';
@@ -32,7 +32,7 @@ export function Screen({ children, canGoBack, scrollable }: ScreenProps) {
                             canGoBack &&
                             <Pressable onPress={() => console.log('Teste')}>
                                 <Box mb={'s24'} width={42} height={42} borderRadius={'s42'} backgroundColor='backgroundContrast' alignItems='center' justifyContent='center'>
-                                    <Text></Text>
+                                    <Icon name='backArrow' />
                                 </Box>
                             </Pressable>
                         }

@@ -12,7 +12,8 @@ module.exports = {
                 '@api': './src/api',
                 '@service': './src/service',
                 '@theme': './src/theme',
-                '@hooks': './src/hooks'
+                '@hooks': './src/hooks',
+                '@assets': './src/assets'
             }
         }]
     ]

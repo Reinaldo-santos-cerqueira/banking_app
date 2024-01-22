@@ -1,4 +1,4 @@
-import { Text } from '@components';
+import { OnBoardingScreen } from '@screen';
 import { ThemeProvider } from '@shopify/restyle';
 import { theme } from '@theme';
 import React, { useEffect } from 'react';
@@ -12,7 +12,7 @@ function App(): React.ReactNode {
     return (
         <SafeAreaProvider>
             <ThemeProvider theme={theme}>
-                <Text mt='s20' variant='subTitleSlider'>Teste</Text>
+                <OnBoardingScreen />
             </ThemeProvider>
         </SafeAreaProvider>
     );

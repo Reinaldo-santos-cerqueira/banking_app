@@ -1,4 +1,4 @@
-import { OnBoardingScreen } from '@screen';
+import { Router } from '@routes';
 import { ThemeProvider } from '@shopify/restyle';
 import { theme } from '@theme';
 import React, { useEffect } from 'react';
@@ -12,7 +12,7 @@ function App(): React.ReactNode {
     return (
         <SafeAreaProvider>
             <ThemeProvider theme={theme}>
-                <OnBoardingScreen />
+                <Router />
             </ThemeProvider>
         </SafeAreaProvider>
     );

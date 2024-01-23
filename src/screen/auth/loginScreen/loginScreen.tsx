@@ -8,7 +8,7 @@ export function LoginScreen({ navigation }: AuthScreenProps<'LoginScreen'>) {
         <Screen canGoBack>
             <Text variant='titlePage' mb='s32'>Sign In</Text>
             <TextInput icon='email' label='Email address' placeholder='Enter email' />
-            <TextInput icon='eye' label='Password' placeholder='Enter password' isPassword />
+            <TextInput icon='padLock' label='Password' placeholder='Enter password' isPassword />
             <Button title='Sign In' mt={'s20'} mb='s32' />
             <Box flexDirection='row' justifyContent='center'>
                 <Text variant='labelText'>{'I\'m a new user.'}</Text>

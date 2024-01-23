@@ -2,7 +2,7 @@ import React from 'react';
 import { useAppTheme } from '@hooks';
 import { ThemeColors } from '@theme';
 import { Pressable } from 'react-native';
-import { BackArrow, Email, Eye, EyeOff } from '@assets';
+import { BackArrow, Email, Eye, EyeOff, PadLock, Phone, User } from '@assets';
 
 export interface IconBase {
     size?: number;
@@ -37,7 +37,10 @@ const iconRegistry = {
     backArrow: BackArrow,
     email: Email,
     eye: Eye,
-    eyeOff: EyeOff
+    eyeOff: EyeOff,
+    phone: Phone,
+    user: User,
+    padLock: PadLock
 };
 
 type IconType = typeof iconRegistry;

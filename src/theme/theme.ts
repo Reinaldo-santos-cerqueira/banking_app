@@ -30,7 +30,7 @@ export const theme = createTheme({
         bgCardArea: palette.blueLight,
         grayWhite: palette.grayWhite,
         gray1: palette.gray1,
-
+        error: palette.redLight
     },
     spacing: {
         s4: 4,
@@ -62,13 +62,12 @@ export const theme = createTheme({
             fontStyle: 'normal',
             fontWeight: 400,
         },
-        logoText: {
+        titlePage: {
             color: 'grayWhite',
-            fontFamily: 'Poppins-SemiBold',
-            fontSize: 35,
+            fontFamily: 'Poppins-Medium',
+            fontSize: 34,
             fontStyle: 'normal',
             fontWeight: 600,
-            textTransform: 'uppercase',
         },
         titleSlider: {
             color: 'grayWhite',
@@ -96,6 +95,13 @@ export const theme = createTheme({
         },
         labelText: {
             color: 'inputColor',
+            fontFamily: 'Poppins-Regular',
+            fontSize: 14,
+            fontStyle: 'normal',
+            fontWeight: 400,
+        },
+        erroInput: {
+            color: 'error',
             fontFamily: 'Poppins-Regular',
             fontSize: 14,
             fontStyle: 'normal',

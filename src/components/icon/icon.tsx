@@ -2,7 +2,7 @@ import React from 'react';
 import { useAppTheme } from '@hooks';
 import { ThemeColors } from '@theme';
 import { Pressable } from 'react-native';
-import { BackArrow } from '@assets';
+import { BackArrow, Email, Eye, EyeOff } from '@assets';
 
 export interface IconBase {
     size?: number;
@@ -35,6 +35,9 @@ export function Icon({ name, color = 'backgroundContrast', size, onPress, circle
 
 const iconRegistry = {
     backArrow: BackArrow,
+    email: Email,
+    eye: Eye,
+    eyeOff: EyeOff
 };
 
 type IconType = typeof iconRegistry;

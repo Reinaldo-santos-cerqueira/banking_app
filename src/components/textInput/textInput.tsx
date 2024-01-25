@@ -2,14 +2,15 @@ import { Box, BoxProps, Icon, IconName, Text } from '@components';
 import { TextInput as RNTextInput, TextInputProps, TextStyle } from 'react-native';
 import React, { useState } from 'react';
 
-interface props extends TextInputProps {
+export interface props extends TextInputProps {
     label: string;
     boxprops?: BoxProps;
     isPassword?: boolean;
+    erroMessage?: string,
     icon: IconName;
 }
 
-export function TextInput({ label, boxprops, isPassword, icon, ...props }: props) {
+export function TextInput({ label, boxprops, isPassword, erroMessage, icon, ...props }: props) {
     const [securityText, setSecurityText] = useState(false);
     return (
         <Box {...boxprops} borderBottomWidth={1} borderColor='gray2' mb='s20'>
@@ -25,8 +26,10 @@ export function TextInput({ label, boxprops, isPassword, icon, ...props }: props
                 {
                     isPassword && <Icon onPress={() => setSecurityText(!securityText)} name={securityText ? 'eye' : 'eyeOff'} />
                 }
-
             </Box>
+            {
+                erroMessage && <Text color='error' variant='labelText'>{erroMessage}</Text>
+            }
         </Box>
     );
 }

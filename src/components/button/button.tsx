@@ -24,7 +24,7 @@ export function Button(
     return (
         <TouchableOpacityBox
             disabled={disabled || loading}
-            backgroundColor={'bluePrimary'}
+            backgroundColor={disabled ? 'bluePrimaryDisabled' : 'bluePrimary'}
             height={56}
             borderRadius='s12'
             alignItems='center'

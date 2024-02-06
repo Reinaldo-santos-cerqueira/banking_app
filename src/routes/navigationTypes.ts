@@ -1,5 +1,5 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { AppStackParams } from './app.routes';
+import { AppStackParams } from './appStack.routes';
 import { AuthStackParams } from './authStack.routes';
 
 declare global {

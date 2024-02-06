@@ -32,7 +32,10 @@ export const theme = createTheme({
         bgCardArea: palette.blueLight,
         grayWhite: palette.grayWhite,
         gray1: palette.gray1,
-        error: palette.redLight
+        error: palette.redLight,
+        tabColor: palette.blueMedium,
+        tabColorItemActive: palette.bluePrimary,
+        tabColorItemInative: palette.gray3
     },
     spacing: {
         s4: 4,
@@ -108,6 +111,12 @@ export const theme = createTheme({
             fontSize: 14,
             fontStyle: 'normal',
             fontWeight: 400,
+        },
+        tabLabel: {
+            fontFamily: 'Poppins-Regular',
+            fontSize: 14,
+            fontStyle: 'normal',
+            fontWeight: 700,
         }
     }
 });

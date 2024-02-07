@@ -7,3 +7,4 @@ export * from './icon/icon';
 export * from './flatOnboarding/flatOnboarding';
 export * from './textInput/textInput';
 export * from './textInputWithController/textInputWithController';
+export * from './profile/profile';

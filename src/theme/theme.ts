@@ -57,6 +57,7 @@ export const theme = createTheme({
         s12: 12,
         s16: 16,
         s21: 21,
+        s25: 25,
         s42: 42
     },
     textVariants: {
@@ -117,6 +118,18 @@ export const theme = createTheme({
             fontSize: 14,
             fontStyle: 'normal',
             fontWeight: 700,
+        },
+        nameProfile: {
+            fontFamily: 'Poppins-Medium',
+            fontSize: 18,
+            fontStyle: 'normal',
+            fontWeight: 500,
+        },
+        titleProfile: {
+            fontFamily: 'Poppins-Regular',
+            fontSize: 12,
+            fontStyle: 'normal',
+            fontWeight: 400,
         }
     }
 });

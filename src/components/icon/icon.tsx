@@ -5,17 +5,20 @@ import { Box } from '@components';
 import { Pressable } from 'react-native';
 import {
     BackArrow,
+    CardChip,
     Email,
     Eye,
     EyeOff,
     HomeICon,
+    MasterCard,
     MyCardIcon,
     PadLock,
     Phone,
     Search,
     SettingsIcon,
     StatisticsIcon,
-    User
+    User,
+    WifiIcon
 } from '@assets';
 
 export interface IconBase {
@@ -79,7 +82,10 @@ const iconRegistry = {
     settings: SettingsIcon,
     myCard: MyCardIcon,
     statistic: StatisticsIcon,
-    search: Search
+    search: Search,
+    wifi: WifiIcon,
+    cardChip: CardChip,
+    masterCard: MasterCard
 };
 
 type IconType = typeof iconRegistry;

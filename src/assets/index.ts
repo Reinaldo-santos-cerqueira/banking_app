@@ -13,6 +13,9 @@ export * from './svg/settingsIcon';
 export * from './svg/myCardICon';
 export * from './svg/homeIcon';
 export * from './svg/search';
+export * from './svg/wifi';
+export * from './svg/cardChip';
+export * from './svg/masterCard';
 import ProfileImagem from './images/profile.png';
 import CardBg from './images/cardBg.png';
 

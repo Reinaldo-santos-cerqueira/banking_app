@@ -15,7 +15,8 @@ const palette = {
     greenPrimary: '#1FAA47',
     redPrimary: '#EB0A24',
     redLight: '#E16364',
-    grayWhite: '#FFFFFF'
+    grayWhite: '#FFFFFF',
+    gray5: '#4A4A7A'
 };
 
 export const theme = createTheme({
@@ -35,7 +36,8 @@ export const theme = createTheme({
         error: palette.redLight,
         tabColor: palette.blueMedium,
         tabColorItemActive: palette.bluePrimary,
-        tabColorItemInative: palette.gray3
+        tabColorItemInative: palette.gray3,
+        iconCard: palette.gray5
     },
     spacing: {
         s4: 4,
@@ -88,6 +90,29 @@ export const theme = createTheme({
             textAlign: 'center',
             fontFamily: 'Poppins-Regular',
             fontSize: 14,
+            fontStyle: 'normal',
+            fontWeight: 400,
+        },
+        cardNumber: {
+            color: 'grayWhite',
+            textAlign: 'justify',
+            fontFamily: 'Poppins-Regular',
+            fontSize: 24,
+            fontStyle: 'normal',
+            fontWeight: 400,
+            width: '100%',
+        },
+        textCard: {
+            color: 'grayWhite',
+            fontFamily: 'Poppins-Regular',
+            fontSize: 13,
+            fontStyle: 'normal',
+            fontWeight: 400,
+        },
+        labelCard: {
+            color: 'gray4',
+            fontFamily: 'Poppins-Regular',
+            fontSize: 9,
             fontStyle: 'normal',
             fontWeight: 400,
         },

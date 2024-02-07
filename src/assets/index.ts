@@ -12,3 +12,8 @@ export * from './svg/statisticsIcon';
 export * from './svg/settingsIcon';
 export * from './svg/myCardICon';
 export * from './svg/homeIcon';
+export * from './svg/search';
+import ProfileImagem from './images/profile.png';
+import CardBg from './images/cardBg.png';
+
+export { ProfileImagem, CardBg };

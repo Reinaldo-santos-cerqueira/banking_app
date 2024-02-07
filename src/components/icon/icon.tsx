@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAppTheme } from '@hooks';
 import { ThemeColors } from '@theme';
+import { Box } from '@components';
 import { Pressable } from 'react-native';
 import {
     BackArrow,
@@ -11,6 +12,7 @@ import {
     MyCardIcon,
     PadLock,
     Phone,
+    Search,
     SettingsIcon,
     StatisticsIcon,
     User
@@ -27,12 +29,32 @@ export interface IconProps {
     color?: ThemeColors;
     size?: number;
     onPress?: () => void;
-    circleColor?: ThemeColors
+    circleColor?: ThemeColors;
+    colorArea?: ThemeColors;
 }
-export function Icon({ name, color = 'backgroundContrast', size, onPress, circleColor = 'backgroundContrast' }: IconProps) {
+export function Icon({ name, color = 'backgroundContrast', size, onPress, circleColor = 'backgroundContrast', colorArea }: IconProps) {
     const { colors } = useAppTheme();
     const SVGIcon = iconRegistry[name];
-    if (onPress) {
+    if (colorArea) {
+        return (
+            <Box
+                backgroundColor={colorArea}
+                borderRadius='s21'
+                width={42}
+                height={42}
+                alignItems='center'
+                justifyContent='center'
+            >
+                <Pressable
+                    onPress={onPress}
+                    hitSlop={10}
+                >
+                    <SVGIcon color={colors[color]} size={size} circleColor={colors[circleColor]} />
+                </Pressable>
+            </Box>
+        );
+    }
+    else if (onPress) {
         return (
             <Pressable
                 onPress={onPress}
@@ -56,7 +78,8 @@ const iconRegistry = {
     home: HomeICon,
     settings: SettingsIcon,
     myCard: MyCardIcon,
-    statistic: StatisticsIcon
+    statistic: StatisticsIcon,
+    search: Search
 };
 
 type IconType = typeof iconRegistry;

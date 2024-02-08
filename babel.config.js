@@ -8,12 +8,10 @@ module.exports = {
                 '@screen': './src/screen',
                 '@utils': './src/utils',
                 '@routes': './src/routes',
-                '@models': './src/models',
-                '@api': './src/api',
-                '@service': './src/service',
                 '@theme': './src/theme',
                 '@hooks': './src/hooks',
-                '@assets': './src/assets'
+                '@assets': './src/assets',
+                '@domain': './src/domain'
             }
         }]
     ]

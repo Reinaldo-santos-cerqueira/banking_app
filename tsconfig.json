@@ -34,7 +34,10 @@
       ],
       "@assets": [
         "./src/assets"
-      ]
+      ],
+      "@domain": [
+        "./src/domain"
+      ],
     }
   }
 }

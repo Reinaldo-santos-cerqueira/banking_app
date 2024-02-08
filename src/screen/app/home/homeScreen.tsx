@@ -1,14 +1,15 @@
 import { ProfileImagem } from '@assets';
-import { Box, Card, Icon, IconName, Profile, Screen } from '@components';
-import React from 'react';
-import { Pressable } from 'react-native';
+import { Box, Card, Icon, IconName, Profile, Screen, Text, Transaction } from '@components';
+import { Transactions, transactionsService } from '@domain';
+import React, { useEffect, useState } from 'react';
+import { FlatList, ListRenderItemInfo, Pressable } from 'react-native';
 
 interface propsArray {
     name: IconName
 }
 
 export function HomeScreen() {
-
+    const [transaction, setTransaction] = useState<Transactions[]>([]);
     const btnArray: propsArray[] = [
         {
             name: 'sent',
@@ -23,6 +24,18 @@ export function HomeScreen() {
             name: 'Topup'
         }
     ];
+
+    useEffect(() => {
+        (
+            async () => {
+                const transactionsGet = await transactionsService.get();
+                setTransaction(transactionsGet);
+            }
+        )();
+    }, []);
+    const renderItem = ({ item }: ListRenderItemInfo<Transactions>) => (
+        <Transaction {...item} />
+    );
 
     return (
         <Screen>
@@ -44,6 +57,7 @@ export function HomeScreen() {
                     btnArray.map((item, index) => (
                         <Pressable
                             key={index}
+                            style={{ display: 'flex', alignItems: 'center' }}
                         >
                             <Box
                                 width={54}
@@ -52,15 +66,34 @@ export function HomeScreen() {
                                 backgroundColor='backgroundContrast'
                                 justifyContent='center'
                                 alignItems='center'
+                                mb='s10'
                             >
                                 <Icon name={item.name} />
                             </Box>
+                            <Text textTransform='capitalize' >{item.name}</Text>
+
                         </Pressable>
                     ))
                 }
             </Box>
-            <Box>
+            <Box
+                flexDirection='row'
+                justifyContent='space-between'
+                alignItems='center'
+            >
+                <Text variant='nameProfile'>Transaction</Text>
+                <Pressable>
+                    <Text variant='headerFlat'>See All </Text>
+                </Pressable>
             </Box>
-        </Screen>
+            <Box
+                flex={1}
+            >
+                <FlatList
+                    data={transaction}
+                    renderItem={renderItem}
+                />
+            </Box>
+        </Screen >
     );
 }

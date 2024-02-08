@@ -1,9 +1,29 @@
-import { CardBg, ProfileImagem } from '@assets';
-import { Box, Icon, Profile, Screen } from '@components';
+import { ProfileImagem } from '@assets';
+import { Box, Card, Icon, IconName, Profile, Screen } from '@components';
 import React from 'react';
-import { Image } from 'react-native';
+import { Pressable } from 'react-native';
+
+interface propsArray {
+    name: IconName
+}
 
 export function HomeScreen() {
+
+    const btnArray: propsArray[] = [
+        {
+            name: 'sent',
+        },
+        {
+            name: 'receive'
+        },
+        {
+            name: 'loan'
+        },
+        {
+            name: 'Topup'
+        }
+    ];
+
     return (
         <Screen>
             <Box
@@ -14,14 +34,32 @@ export function HomeScreen() {
                 <Profile name='Reinaldo Santos' title='Welcome back' photo={ProfileImagem} />
                 <Icon name='search' color='grayWhite' colorArea='backgroundContrast' />
             </Box>
+            <Card />
             <Box
-                width={'100%'}
-                height={200}
-                backgroundColor={'bgCardArea'}
-                borderRadius='s25'
-                position='relative'
+                paddingVertical='s20'
+                flexDirection='row'
+                justifyContent='space-between'
             >
-                <Image source={CardBg} height={200} style={{ position: 'absolute', top: 0, left: 0 }} />
+                {
+                    btnArray.map((item, index) => (
+                        <Pressable
+                            key={index}
+                        >
+                            <Box
+                                width={54}
+                                height={54}
+                                borderRadius='s27'
+                                backgroundColor='backgroundContrast'
+                                justifyContent='center'
+                                alignItems='center'
+                            >
+                                <Icon name={item.name} />
+                            </Box>
+                        </Pressable>
+                    ))
+                }
+            </Box>
+            <Box>
             </Box>
         </Screen>
     );

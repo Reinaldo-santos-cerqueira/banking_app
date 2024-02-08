@@ -4,21 +4,28 @@ import { ThemeColors } from '@theme';
 import { Box } from '@components';
 import { Pressable } from 'react-native';
 import {
+    Apple,
     BackArrow,
     CardChip,
+    CartDown,
+    CartUp,
     Email,
     Eye,
     EyeOff,
     HomeICon,
     Loan,
     MasterCard,
+    MoneyDown,
+    MoneyUp,
     MyCardIcon,
+    Netflix,
     PadLock,
     Phone,
     Receive,
     Search,
     Sent,
     SettingsIcon,
+    Spotify,
     StatisticsIcon,
     Topup,
     User,
@@ -93,7 +100,14 @@ const iconRegistry = {
     loan: Loan,
     sent: Sent,
     receive: Receive,
-    Topup: Topup
+    Topup: Topup,
+    moneyDown: MoneyDown,
+    moneyUp: MoneyUp,
+    cartDown: CartDown,
+    cartUp: CartUp,
+    spotify: Spotify,
+    netflix: Netflix,
+    apple: Apple
 };
 
 type IconType = typeof iconRegistry;

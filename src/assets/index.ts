@@ -20,6 +20,13 @@ export * from './svg/loan';
 export * from './svg/topup';
 export * from './svg/sent';
 export * from './svg/receive';
+export * from './svg/apple';
+export * from './svg/cartDown';
+export * from './svg/cartUp';
+export * from './svg/moneyDown';
+export * from './svg/moneyUp';
+export * from './svg/spotify';
+export * from './svg/netflix';
 
 import ProfileImagem from './images/profile.png';
 import CardBg from './images/cardBg.png';

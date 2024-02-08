@@ -4,14 +4,14 @@ export const TransactionMock: Transactions[] = [
     {
         name: 'Apple store',
         purpose: 'Entertainment',
-        value: -5.99,
+        value: 5.99,
         icon: 'apple',
         type: 'S'
     },
     {
         name: 'Shopping center',
         purpose: 'Shopping',
-        value: -59.99,
+        value: 59.99,
         icon: 'cartDown',
         type: 'S'
     },
@@ -25,14 +25,14 @@ export const TransactionMock: Transactions[] = [
     {
         name: 'Spotify',
         purpose: 'Music',
-        value: -12.99,
+        value: 12.99,
         icon: 'spotify',
         type: 'S'
     },
     {
         name: 'Money Transfer',
         purpose: 'Transaction',
-        value: -59.99,
+        value: 59.99,
         icon: 'moneyDown',
         type: 'S'
     },

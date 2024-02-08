@@ -16,6 +16,11 @@ export * from './svg/search';
 export * from './svg/wifi';
 export * from './svg/cardChip';
 export * from './svg/masterCard';
+export * from './svg/loan';
+export * from './svg/topup';
+export * from './svg/sent';
+export * from './svg/receive';
+
 import ProfileImagem from './images/profile.png';
 import CardBg from './images/cardBg.png';
 

@@ -10,13 +10,17 @@ import {
     Eye,
     EyeOff,
     HomeICon,
+    Loan,
     MasterCard,
     MyCardIcon,
     PadLock,
     Phone,
+    Receive,
     Search,
+    Sent,
     SettingsIcon,
     StatisticsIcon,
+    Topup,
     User,
     WifiIcon
 } from '@assets';
@@ -85,7 +89,11 @@ const iconRegistry = {
     search: Search,
     wifi: WifiIcon,
     cardChip: CardChip,
-    masterCard: MasterCard
+    masterCard: MasterCard,
+    loan: Loan,
+    sent: Sent,
+    receive: Receive,
+    Topup: Topup
 };
 
 type IconType = typeof iconRegistry;

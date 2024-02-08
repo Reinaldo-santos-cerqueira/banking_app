@@ -1,0 +1,15 @@
+
+import React from 'react';
+import { Path, Svg } from 'react-native-svg';
+
+export function Loan() {
+    return (
+        <Svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <Path d="M12 6V7.5" stroke="white" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+            <Path d="M12 18V16.5" stroke="white" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+            <Path d="M14.9844 9.6C14.9064 8.4288 13.9404 7.5 12.75 7.5H11.106C9.942 7.5 9 8.4432 9 9.606C9 10.572 9.6576 11.4144 10.5936 11.6496L13.4052 12.3552C14.3424 12.5904 14.9988 13.4328 14.9988 14.3988C14.9988 15.5628 14.0556 16.5048 12.8928 16.5048H11.2488C10.056 16.5048 9.09 15.5736 9.0132 14.4" stroke="white" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+            <Path d="M0.75 12C0.75 5.7868 5.7868 0.75 12 0.75C18.2132 0.75 23.25 5.7868 23.25 12C23.25 18.2132 18.2132 23.25 12 23.25C5.7868 23.25 0.75 18.2132 0.75 12Z" stroke="white" strokeWidth="1.5" />
+        </Svg>
+    );
+}
+

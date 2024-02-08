@@ -60,6 +60,7 @@ export const theme = createTheme({
         s16: 16,
         s21: 21,
         s25: 25,
+        s27: 27,
         s42: 42
     },
     textVariants: {

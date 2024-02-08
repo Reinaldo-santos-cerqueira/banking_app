@@ -1,9 +1,16 @@
 
 import { IconBase } from '@components';
 import * as React from 'react';
-import Svg, { Path } from 'react-native-svg';
+import Svg, { G, Path } from 'react-native-svg';
 export const MoneyDown = ({ size = 20 }: IconBase) => (
     <Svg viewBox="0 0 24 24" fill="none" width={size} height={size}>
-        <Path d="M12 12a3 3 0 1 0 3 3 3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1Zm-.71-6.29a1 1 0 0 0 .33.21.94.94 0 0 0 .76 0 1 1 0 0 0 .33-.21L15 7.46A1 1 0 1 0 13.54 6l-.54.59V3a1 1 0 0 0-2 0v3.59L10.46 6A1 1 0 0 0 9 7.46ZM19 15a1 1 0 1 0-1 1 1 1 0 0 0 1-1Zm1-7h-3a1 1 0 0 0 0 2h3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h3a1 1 0 0 0 0-2H4a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3ZM5 15a1 1 0 1 0 1-1 1 1 0 0 0-1 1Z" stroke={'#ea001b'} />
+        <G >
+            <Path d="M9.5 13.7502C9.5 14.7202 10.25 15.5002 11.17 15.5002H13.05C13.85 15.5002 14.5 14.8202 14.5 13.9702C14.5 13.0602 14.1 12.7302 13.51 12.5202L10.5 11.4702C9.91 11.2602 9.51001 10.9402 9.51001 10.0202C9.51001 9.18023 10.16 8.49023 10.96 8.49023H12.84C13.76 8.49023 14.51 9.27023 14.51 10.2402" stroke="#861D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <Path d="M12 7.5V16.5" stroke="#861d1d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </G>
+        <Path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2" stroke="#861D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <Path d="M22 6V2H18" stroke="#861D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <Path d="M17 7L22 2" stroke="#861D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
     </Svg>
 );

@@ -16,7 +16,8 @@ const palette = {
     redPrimary: '#EB0A24',
     redLight: '#E16364',
     grayWhite: '#FFFFFF',
-    gray5: '#4A4A7A'
+    gray5: '#4A4A7A',
+    gray6: '#8B8B91'
 };
 
 export const theme = createTheme({
@@ -117,6 +118,20 @@ export const theme = createTheme({
             fontStyle: 'normal',
             fontWeight: 400,
         },
+        textFlatTitle: {
+            color: 'grayWhite',
+            fontFamily: 'Poppins-Medium',
+            fontSize: 16,
+            fontStyle: 'normal',
+            fontWeight: 600,
+        },
+        textFlat: {
+            color: 'gray6',
+            fontFamily: 'Poppins-Regular',
+            fontSize: 12,
+            fontStyle: 'normal',
+            fontWeight: 400,
+        },
         btnText: {
             color: 'grayWhite',
             textAlign: 'center',
@@ -131,6 +146,13 @@ export const theme = createTheme({
             fontSize: 14,
             fontStyle: 'normal',
             fontWeight: 400,
+        },
+        headerFlat: {
+            color: 'bluePrimary',
+            fontFamily: 'Poppins-Medium',
+            fontSize: 14,
+            fontStyle: 'normal',
+            fontWeight: 500,
         },
         erroInput: {
             color: 'error',

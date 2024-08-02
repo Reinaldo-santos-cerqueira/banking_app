@@ -38,6 +38,9 @@
       "@domain": [
         "./src/domain"
       ],
+      "@redux": [
+        "./src/redux"
+      ],
     }
   }
 }

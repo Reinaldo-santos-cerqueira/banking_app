@@ -11,7 +11,8 @@ module.exports = {
                 '@theme': './src/theme',
                 '@hooks': './src/hooks',
                 '@assets': './src/assets',
-                '@domain': './src/domain'
+                '@domain': './src/domain',
+                '@redux':'./src/redux'
             }
         }]
     ]

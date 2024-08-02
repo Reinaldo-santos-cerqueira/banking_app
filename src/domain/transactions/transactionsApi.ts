@@ -4,7 +4,7 @@ import { Transactions } from './types';
 async function get(): Promise<Transactions[]> {
     await new Promise(resolve => setTimeout(() => {
         resolve('');
-    }, 2000));
+    }, 1000));
     return TransactionMock;
 }
 

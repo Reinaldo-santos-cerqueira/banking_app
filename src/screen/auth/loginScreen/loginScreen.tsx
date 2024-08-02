@@ -7,6 +7,8 @@ import {
 } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { LoginSchema, loginSchema } from './loginSchema';
+import { useDispatch } from 'react-redux';
+import { AppDispatch, login } from '@redux';
 
 export function LoginScreen({ navigation }: AuthScreenProps<'LoginScreen'>) {
     const { control, formState, handleSubmit } = useForm<LoginSchema>({
@@ -18,15 +20,18 @@ export function LoginScreen({ navigation }: AuthScreenProps<'LoginScreen'>) {
         mode: 'onChange'
     });
 
+    const dispatch = useDispatch<AppDispatch>();
+
     const [loadingBtn, setLoadingBtn] = useState(false);
 
     const goToSignUp = () => {
         navigation.navigate('SignUpScreen');
     };
-    const login = async () => {
+    const loginClick = async () => {
         setLoadingBtn(true);
-        await new Promise(resolve => setTimeout(() => {
+        await new Promise(resolve => setTimeout(() => {            
             resolve('');
+            dispatch(login());
         }, 2000));
         setLoadingBtn(false);
 
@@ -38,8 +43,8 @@ export function LoginScreen({ navigation }: AuthScreenProps<'LoginScreen'>) {
             <TextInputWithController name='password' control={control} icon='padLock' label='Password' placeholder='Enter password' isPassword />
             <Button
                 disabled={!formState.isValid}
-                title='Sign In'
-                onPress={handleSubmit(login)} loading={loadingBtn} mt={'s20'} mb='s32'
+                title='Sign In'     
+                onPress={handleSubmit(loginClick)} loading={loadingBtn} mt={'s20'} mb='s32'
             />
             <Box flexDirection='row' justifyContent='center'>
                 <Text variant='labelText'>{'I\'m a new user.'}</Text>

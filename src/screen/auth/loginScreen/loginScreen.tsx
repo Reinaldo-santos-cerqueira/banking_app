@@ -9,6 +9,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { LoginSchema, loginSchema } from './loginSchema';
 import { useDispatch } from 'react-redux';
 import { AppDispatch, login } from '@redux';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export function LoginScreen({ navigation }: AuthScreenProps<'LoginScreen'>) {
     const { control, formState, handleSubmit } = useForm<LoginSchema>({
@@ -31,10 +32,16 @@ export function LoginScreen({ navigation }: AuthScreenProps<'LoginScreen'>) {
         setLoadingBtn(true);
         await new Promise(resolve => setTimeout(() => {            
             resolve('');
-            dispatch(login());
-        }, 2000));
+            try{
+                AsyncStorage.setItem('logged','true');
+                dispatch(login());
+            }
+            catch(e){
+                console.log(e);
+            }
+            
+        }, 1000));
         setLoadingBtn(false);
-
     };
     return (
         <Screen canGoBack>

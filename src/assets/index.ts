@@ -27,6 +27,8 @@ export * from './svg/moneyDown';
 export * from './svg/moneyUp';
 export * from './svg/spotify';
 export * from './svg/netflix';
+export * from './svg/bell';
+export * from './svg/add';
 
 import ProfileImagem from './images/profile.png';
 import CardBg from './images/cardBg.png';

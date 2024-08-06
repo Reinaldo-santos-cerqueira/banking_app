@@ -11,6 +11,7 @@ export function Card() {
             backgroundColor={'bgCardArea'}
             borderRadius='s25'
             padding='s20'
+            mb='s20'
             position='relative'
         >
             <Image source={CardBg} height={200} style={{ position: 'absolute', top: 0, left: 0, zIndex: -10 }} />

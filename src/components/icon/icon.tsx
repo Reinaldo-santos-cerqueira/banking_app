@@ -29,7 +29,9 @@ import {
     StatisticsIcon,
     Topup,
     User,
-    WifiIcon
+    WifiIcon,
+    Bell,
+    Add
 } from '@assets';
 
 export interface IconBase {
@@ -107,7 +109,9 @@ const iconRegistry = {
     cartUp: CartUp,
     spotify: Spotify,
     netflix: Netflix,
-    apple: Apple
+    apple: Apple,
+    bell: Bell,
+    add: Add,
 };
 
 type IconType = typeof iconRegistry;

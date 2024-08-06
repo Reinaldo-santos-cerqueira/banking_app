@@ -6,6 +6,7 @@ import React, { useEffect } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import SplashScreen from 'react-native-splash-screen';
 import {store} from '@redux';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 function App(): React.ReactNode {
     useEffect(() => {
@@ -13,11 +14,13 @@ function App(): React.ReactNode {
     }, []);
     return (
         <Provider store={store}>
-            <SafeAreaProvider>
-                <ThemeProvider theme={theme}>
-                    <Router />
-                </ThemeProvider>
-            </SafeAreaProvider>
+            <GestureHandlerRootView style={{ flex: 1 }}>
+                <SafeAreaProvider>
+                    <ThemeProvider theme={theme}>
+                        <Router />
+                    </ThemeProvider>
+                </SafeAreaProvider>
+            </GestureHandlerRootView>
         </Provider>
     );
 }

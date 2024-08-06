@@ -47,6 +47,7 @@ export const theme = createTheme({
         s12: 12,
         s14: 14,
         s16: 16,
+        s18: 18,
         s20: 20,
         s24: 24,
         s32: 32,
@@ -59,6 +60,7 @@ export const theme = createTheme({
         s8: 8,
         s12: 12,
         s16: 16,
+        s18: 18,
         s21: 21,
         s25: 25,
         s27: 27,
@@ -172,7 +174,13 @@ export const theme = createTheme({
             fontSize: 18,
             fontStyle: 'normal',
             fontWeight: 500,
-        },
+        }, 
+        titlePagesApp: {
+            fontFamily: 'Poppins-Medium',
+            fontSize: 18,
+            fontStyle: 'medium',
+            fontWeight: 500,
+        }, 
         titleProfile: {
             fontFamily: 'Poppins-Regular',
             fontSize: 12,
@@ -182,5 +190,5 @@ export const theme = createTheme({
     }
 });
 
-export type Theme = typeof theme;
+export type  Theme = typeof theme;
 export type ThemeColors = keyof Theme['colors'];
